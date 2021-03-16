@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <a class="new-msg-link" href='/new'>New Messages</a>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 class="title-msg"><%= title %></h1>
+    <br />
+    <div><% for(let i=0;i<messages.length;i++){%>
+      <div class="border-msg">
+        <p><%=messages[i].added %></p>
+        <p><%=messages[i].user %></p>
+        <p><%=messages[i].text %></p>
+        <br/>
+      </div>
+      <br/>
+      <br/>
+      <% } %>
+    </div>
+  </body>
+</html>

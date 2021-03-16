@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* a {
+  color: #00b7ff;
+} */
+/* button {
+  background-color: black;
+  color: white;
+} */
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+a:link,
+a:visited {
+  background-color: white;
+  color: black;
+  border: 1px solid green;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(113, 243, 113);
+  color: white;
+}
+.border-msg {
+  min-height: 5em;
+  padding: 0.5em 4em;
+  font: 1em/150% sans-serif;
+  position: relative;
+  background-color: lightgoldenrodyellow;
+}
+.border-msg::before,
+.border-msg::after {
+  position: absolute;
+  height: 3rem;
+  font: 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
+.border-msg::before {
+  content: "«";
+  top: -1.5rem;
+  left: 0.5rem;
+}
+
+.border-msg::after {
+  content: "»";
+  bottom: 2.6rem;
+  right: 0.5rem;
+}
